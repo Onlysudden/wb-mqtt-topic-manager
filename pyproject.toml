@@ -1,7 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "wb-mqtt-topic-manager"
 version = "0.1.0"
-description = "Add your description here"
+authors = [
+    {name = "Valerii Trofimov", email = "trofimof09@mail.ru"}
+]
+description = "Python module (library) for working with an MQTT broker, which fully encapsulates topic logic in accordance with the Wiren Board convention"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -10,6 +17,12 @@ dependencies = [
     "pytest-asyncio==1.3.0",
     "setuptools==80.9.0",
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/Onlysudden/wb-mqtt-topic-manager"
+
+[tool.setuptools]
+packages = ["wb_mqtt_topic_manager"]
 
 [tool.ruff]
 exclude = [
