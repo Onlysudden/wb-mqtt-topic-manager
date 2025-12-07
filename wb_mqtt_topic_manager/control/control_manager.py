@@ -1,9 +1,18 @@
 from typing import Any, Optional
 
-from control.base import LocalizedString
-from control.control import DriverControl, ObserverControl, RangeDriverControl
-from control.control_type import AlarmMeta, PushButtonMeta, RangeMeta, SwitchMeta
-from device import DriverDevice
+from wb_mqtt_topic_manager.control.base import LocalizedString
+from wb_mqtt_topic_manager.control.control import (
+    DriverControl,
+    ObserverControl,
+    RangeDriverControl,
+)
+from wb_mqtt_topic_manager.control.control_type import (
+    AlarmMeta,
+    PushButtonMeta,
+    RangeMeta,
+    SwitchMeta,
+)
+from wb_mqtt_topic_manager.device import DriverDevice
 
 
 class ControlManager:

@@ -1,5 +1,6 @@
 import pytest
-from client import MQTTClient
+
+from wb_mqtt_topic_manager.client import MQTTClient
 
 
 @pytest.mark.skip

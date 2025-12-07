@@ -1,8 +1,8 @@
 import json
 from typing import Callable, List
 
-from client import MQTTClient
-from constance import ErrorType, QosType
+from wb_mqtt_topic_manager.client import MQTTClient
+from wb_mqtt_topic_manager.constance import ErrorType, QosType
 
 
 class Device:

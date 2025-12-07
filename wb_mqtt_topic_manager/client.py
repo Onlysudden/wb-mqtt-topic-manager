@@ -3,7 +3,8 @@ import time
 from typing import Any, Callable, Dict, Optional
 
 import paho.mqtt.client as mqtt
-from constance import QosType
+
+from wb_mqtt_topic_manager.constance import QosType
 
 
 class MQTTClient:
@@ -256,7 +257,7 @@ class MQTTClient:
 
             # Если больше нет callback-ов для топика, отписываемся от него
             if topic not in self._message_callbacks:
-                try:
+                try:  # noqa: SIM105
                     self.client.unsubscribe(topic)
                 except Exception:
                     pass
@@ -270,7 +271,7 @@ class MQTTClient:
             # Вызов зарегистрированных callback-ов
             if topic in self._message_callbacks:
                 for callback in self._message_callbacks[topic]:
-                    try:
+                    try:  # noqa: SIM105
                         callback(topic, payload)
                     except Exception:
                         pass

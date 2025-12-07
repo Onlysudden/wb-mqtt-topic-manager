@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Any, Dict
 
-from control.base import BaseMeta, ControlType
+from wb_mqtt_topic_manager.control.base import BaseMeta, ControlType
 
 
 @dataclass

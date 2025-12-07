@@ -1,6 +1,7 @@
 import pytest
-from client import MQTTClient
-from device import DriverDevice, ObserverDevice
+
+from wb_mqtt_topic_manager.client import MQTTClient
+from wb_mqtt_topic_manager.device import DriverDevice, ObserverDevice
 
 
 @pytest.fixture

@@ -1,10 +1,11 @@
 import time
 
 import pytest
-from client import MQTTClient
-from constance import ErrorType
-from control.base import LocalizedString
-from control.control_manager import ControlManager
+
+from wb_mqtt_topic_manager.client import MQTTClient
+from wb_mqtt_topic_manager.constance import ErrorType
+from wb_mqtt_topic_manager.control.base import LocalizedString
+from wb_mqtt_topic_manager.control.control_manager import ControlManager
 
 
 @pytest.mark.skip

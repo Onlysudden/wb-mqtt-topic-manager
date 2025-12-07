@@ -1,9 +1,10 @@
 import time
 
 import pytest
-from client import MQTTClient
-from constance import ErrorType
-from device import DriverDevice, ObserverDevice
+
+from wb_mqtt_topic_manager.client import MQTTClient
+from wb_mqtt_topic_manager.constance import ErrorType
+from wb_mqtt_topic_manager.device import DriverDevice, ObserverDevice
 
 
 @pytest.mark.skip
