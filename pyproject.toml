@@ -22,7 +22,7 @@ dependencies = [
 "Homepage" = "https://github.com/Onlysudden/wb-mqtt-topic-manager"
 
 [tool.setuptools]
-packages = ["wb_mqtt_topic_manager"]
+packages = ["wb_mqtt_topic_manager", "wb_mqtt_topic_manager.control"]
 
 [tool.ruff]
 exclude = [
